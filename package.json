@@ -1,0 +1,13 @@
+{
+  "name": "ng-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/willianlouza/ng-app.git",
+  "author": "Willian Louza <willianlouza@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docker:build": "docker-compose -p ng-app build",
+    "docker:down": "docker-compose -p ng-app down",
+    "docker:up": "docker-compose -p ng-app up"
+  }
+}

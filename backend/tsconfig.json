@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "outDir": "build",
+    "strict": true,
+    "lib": ["ESNext"],
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  }
+}

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-smooth: 2rem;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto Mono, monospace, Roboto, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+}
+
+.wave {
+  width: 200%;
+  border-radius: 1000% 1000% 0 0;
+  opacity: 0.7;
+  height: 4em;
+  bottom: -0.4em;
+}
+.wave:nth-of-type(2) {
+  bottom: -1.2em;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.3em;
+  opacity: 0.9;
+}
+

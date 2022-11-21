@@ -1,0 +1,3 @@
+ng-app-backend/node_modules
+ng-app-frontend/node_modules
+postgresql/**/*

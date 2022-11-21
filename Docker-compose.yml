@@ -1,0 +1,34 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: louza007
+      POSTGRES_DB: bankapp
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    restart: always
+    depends_on:
+      - postgres
+    volumes:
+      - /app/node_modules
+      - ./backend/src:/app
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./frontend
+    restart: always
+    volumes:
+      - /app/node_modules
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
